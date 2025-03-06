@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thông Tin Học Thuật</title>
+</head>
+<body>
+    <form method="post" action="/">
+        <fieldset>
+            <legend>Academic Information</legend>
+            <label for="Degree">Degree</label>
+            <select id="Degree" name="Degree" id="Degree">
+            <option value="AD">Associate Degree</option>
+            <option valua="BA">Bachelor's Degree</option>
+            <option value="MD">Master's Degree</option>
+            <option value="DD">Doctoral Degree</option>
+            </select><br>
+            <label for="Student ID">Student ID</label>
+            <input type="number" name="Student ID" required id="Student ID">
+        </fieldset>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="Fisrt Name">Fisrt Name</label>
+            <input type="text" name="Fisrt Name" id="Fisrt Name" required><br>
+            <label for="Last Name">Last Name</label>
+            <input type="text" name="Last Name" id="Last Name" required><br>
+            <label for="">Gender</label>
+            <input type="radio" id="male" name="gender" value="m">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="f">
+            <label for="female">Female</label><br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required><br>
+            <label for="ynb">Your Number</label>
+            <input type="number" id="ynb" required>
+        </fieldset>
+        <fieldset>
+            <label for="Other">Other information</label><br>
+            <input type="text" id="Other" name="other" placeholder="Other information" style="width: 500px; height: 100px;">
+        </fieldset>
+        <fieldset>
+            <label for="terms"></label>
+            <textarea id="info" name="info" style="width: 500px; height: 100px; resize: none;" readonly>Terms and Condition</textarea><br>
+        </fieldset>
+        <div>
+        <input type="checkbox" id="agree" name="TandC" required>
+        <label for="agree">I agree with Term and Condition</label>
+        </div>
+        <div>
+            <input type="submit" name="submit" value="Send Form" >
+            <input type="reset" value="Clear Form" >
+        </div>
+    </form>
+</body>
+</html>
